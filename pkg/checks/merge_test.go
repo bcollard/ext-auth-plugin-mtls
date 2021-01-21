@@ -3,10 +3,10 @@ package checks_test
 import (
 	"path/filepath"
 
+	"github.com/bcollard/ext-auth-plugin-mtls/pkg/checks"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
-	"github.com/solo-io/ext-auth-plugin-examples/pkg/checks"
 )
 
 const (
@@ -16,7 +16,7 @@ const (
 )
 
 var (
-	pluginModuleName = "github.com/solo-io/ext-auth-plugin-examples"
+	pluginModuleName = "github.com/bcollard/ext-auth-plugin-mtls"
 	moduleVersion    = "1.14"
 )
 

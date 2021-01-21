@@ -1,9 +1,9 @@
-name: RequiredHeader
-pluginFileName: RequiredHeader.so
+name: Mtls
+pluginFileName: Mtls.so
 exportedSymbolName: Plugin
 config:
-  RequiredHeader: my-auth-header
-  AllowedValues:
-  - foo
+  HeaderName: Subj
+  Whitelist:
+  - simpleclient
   - bar
   - baz

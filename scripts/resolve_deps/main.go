@@ -5,7 +5,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/solo-io/ext-auth-plugin-examples/pkg/checks"
+	"github.com/bcollard/ext-auth-plugin-mtls/pkg/checks"
 )
 
 func main() {

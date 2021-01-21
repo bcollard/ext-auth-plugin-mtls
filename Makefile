@@ -8,16 +8,16 @@ format:
 #----------------------------------------------------------------------------------
 
 # Set this variable to the version of GlooE you want to target
-GLOOE_VERSION ?= 1.6.0-beta11
+GLOOE_VERSION ?= 1.6.1
 
 # Set this variable to the name of your build plugin
-PLUGIN_BUILD_NAME ?= RequiredHeader.so
+PLUGIN_BUILD_NAME ?= Mtls.so
 
 # Set this variable to the image name and tag of your plugin
-PLUGIN_IMAGE ?= gloo-ext-auth-plugins:$(GLOOE_VERSION)
+PLUGIN_IMAGE ?= pileenretard/ext-auth-plugin-mtls:$(GLOOE_VERSION)
 
 # Set this variable to the name of your plugin
-PLUGIN_NAME ?= required_header
+PLUGIN_NAME ?= mtls
 
 # Set this variable to the base image name for the container that will have the compiled plugin
 RUN_IMAGE ?= alpine:3.11

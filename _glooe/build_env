@@ -1,0 +1,2 @@
+GO_BUILD_IMAGE=golang:1.15.2-alpine
+GC_FLAGS='all=-N -l'
