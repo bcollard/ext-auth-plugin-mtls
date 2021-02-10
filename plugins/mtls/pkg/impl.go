@@ -90,8 +90,14 @@ func (c *MtlsAuthService) Authorize(ctx context.Context, request *api.Authorizat
 					OkResponse: &envoy_service_auth_v3.OkHttpResponse{
 						Headers: []*envoy_config_core_v3.HeaderValueOption{{
 							Header: &envoy_config_core_v3.HeaderValue{
-								Key:   "matched-allowed-headers",
+								Key:   "mtls-allowed-client",
 								Value: "true",
+							},
+						},
+						{
+							Header: &envoy_config_core_v3.HeaderValue{
+								Key:   "mtls-subject",
+								Value: cn,
 							},
 						}},
 					},
@@ -107,5 +113,5 @@ func (c *MtlsAuthService) Authorize(ctx context.Context, request *api.Authorizat
 }
 
 func logger(ctx context.Context) *zap.SugaredLogger {
-	return contextutils.LoggerFrom(contextutils.WithLogger(ctx, "header_value_plugin"))
+	return contextutils.LoggerFrom(contextutils.WithLogger(ctx, "mtls_plugin"))
 }

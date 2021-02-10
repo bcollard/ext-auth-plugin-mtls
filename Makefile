@@ -8,7 +8,7 @@ format:
 #----------------------------------------------------------------------------------
 
 # Set this variable to the version of GlooE you want to target
-GLOOE_VERSION ?= 1.6.1
+GLOOE_VERSION ?= 1.6.3
 
 # Set this variable to the name of your build plugin
 PLUGIN_BUILD_NAME ?= Mtls.so

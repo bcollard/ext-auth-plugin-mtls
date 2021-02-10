@@ -1,0 +1,10 @@
+global:
+  extensions:
+    extAuth:
+      plugins:
+        mtls:
+          image:
+            repository: ext-auth-plugin-mtls
+            registry: docker.io/pileenretard
+            pullPolicy: Always
+            tag: 1.6.3

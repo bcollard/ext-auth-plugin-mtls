@@ -17,7 +17,7 @@ const (
 
 var (
 	pluginModuleName = "github.com/bcollard/ext-auth-plugin-mtls"
-	moduleVersion    = "1.14"
+	moduleVersion    = "1.15"
 )
 
 var _ = Describe("parseModule script", func() {
